@@ -1,14 +1,6 @@
 import firebase from 'firebase'
 
-const firebaseConfig = {
-    apiKey: "AIzaSyADF0SacbO7c_gOCaVIgrK2d1HMz_Q0HOA",
-    authDomain: "mintnote-api.firebaseapp.com",
-    projectId: "mintnote-api",
-    storageBucket: "mintnote-api.appspot.com",
-    messagingSenderId: "1023487559915",
-    appId: "1:1023487559915:web:389cc791478f3e4031d6ae",
-    measurementId: "G-SW292DGV7G"
-}
+// firebaseConfig
 
 export default class Firebase {
     static user = {
