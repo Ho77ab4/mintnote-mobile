@@ -1,21 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { DrawerLeftMenu } from './Navigators/DrawerLeftMenu'
+import { MenuProvider}  from 'react-native-popup-menu'
+import { Header } from './CustomViewComponents';
+import { NavigationContainer } from '@react-navigation/native';
+import Firebase from './Firebase'
+import firebase from 'firebase'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <MenuProvider>
+      <NavigationContainer>
+        <Header />
+        <DrawerLeftMenu />
+      </NavigationContainer>
+    </MenuProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
